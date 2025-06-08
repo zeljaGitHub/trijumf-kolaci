@@ -1,0 +1,49 @@
+.products-two-color {
+  background-color: #f3ede7;
+}
+
+.ptm {
+  padding-top: 5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* razmak između teksta i ikonice */
+  padding: 10px 16px;
+  border: 3px solid black; /* <-- OVDE je dodato */
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 22px;
+  background-color: transparent; /* ako želiš providnu pozadinu */
+  justify-content: center;
+  width: 18rem;
+}
+
+.custom-button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.products-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.products-gallery img {
+  border-radius: 2rem;
+}
+
+.isprekidana-linija {
+  margin-top: 1rem;
+  width: 92%;
+}

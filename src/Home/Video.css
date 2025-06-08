@@ -1,0 +1,47 @@
+.video {
+  width: 99.2vw;
+  margin-top: 4rem;
+}
+
+.mute-button {
+  position: absolute;
+  top: 120px;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.mute-button.clicked {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .mute-button {
+    top: 85px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,6 @@
+.about-two {
+  display: flex;
+  justify-content: center; /* horizontalno */
+  align-items: center; /* vertikalno */
+  text-align: center;
+}

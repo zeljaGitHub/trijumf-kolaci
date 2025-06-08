@@ -1,0 +1,28 @@
+.Products_one {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background-color: #f3ede7;
+}
+
+.Products_one img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.products_one_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  pointer-events: none; /* tekst neće smetati klikovima na sliku */
+}

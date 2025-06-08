@@ -1,0 +1,27 @@
+.wave-section {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh; /* ili koliko ti treba */
+}
+
+.wave-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover; /* prilagođava sliku sekciji */
+  z-index: 1;
+}
+
+.wave-content {
+  position: relative;
+  z-index: 2;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}

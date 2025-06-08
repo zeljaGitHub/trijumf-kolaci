@@ -1,0 +1,57 @@
+import "./Footer.css";
+import logo from "/logo.png"; // zameni sa pravom putanjom ako treba
+import facebookIcon from "/facebook.png";
+import instagramIcon from "/instagram.png";
+import youtubeIcon from "/youtube.png";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-wave">
+        <div className="white-bg"></div>
+        <img src="/footer-bg.png" alt="footer dekoracija" />
+      </div>
+
+      <div className="footer-content">
+        {/* Leva kolona */}
+        <div className="footer-section">
+          <img src={logo} alt="Logo" className="footer-logo" />
+          <p>
+            Pravljenje domaćih kolača po najboljim receptima, sa pažnjom na
+            svaki detalj i korišćenjem samo najkvalitetnijih sastojaka.
+          </p>
+          <p>
+            Naša tradicija i ljubav prema slatkišima garantuju vrhunski ukus u
+            svakom zalogaju.
+          </p>
+        </div>
+
+        {/* Srednja kolona */}
+        <div className="footer-section">
+          <h3>Kontakt</h3>
+          <p>Kovačkih Boraca 34 V</p>
+          <p>36101 Kraljevo</p>
+          <p>060/64-13-665</p>
+          <p>trijumfstanic@gmail.com</p>
+          <div className="footer-socials">
+            <img src={facebookIcon} alt="Facebook" />
+            <img src={instagramIcon} alt="Instagram" />
+            <img src={youtubeIcon} alt="YouTube" />
+          </div>
+        </div>
+
+        {/* Desna kolona */}
+        <div className="footer-section">
+          <h3>Naruči sada</h3>
+          <form className="footer-form">
+            <input type="email" placeholder="Vaša email adresa" />
+            <textarea placeholder="Napiši poruku"></textarea>
+            <button type="submit">Pošalji</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
