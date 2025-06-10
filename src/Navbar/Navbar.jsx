@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="./logo.png" alt="trijumf" className="frenki" />
+      <img src="./logo2.png" alt="trijumf" className="frenki" />
       {/* Desktop links */}
       <ul className="nav-left">
         <li>
@@ -101,7 +101,7 @@ const Navbar = () => {
         <span></span>
       </button>
 
-      <img src="/logo-white.png" alt="logo" className="mobile-logo" />
+      <img src="/logo.png" alt="logo" className="mobile-logo" />
 
       {/* Mobile menu */}
       <ul ref={menuRef} className={`mobile-menu ${isMenuOpen ? "active" : ""}`}>

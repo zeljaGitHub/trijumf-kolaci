@@ -4,7 +4,6 @@
   max-width: 1200px;
   margin: auto;
   /* overflow: hidden; */
-  z-index: 7;
 }
 
 .slide {
@@ -27,6 +26,7 @@
 .left img {
   width: 100%;
   border-radius: 10px;
+  z-index: 111;
 }
 
 .right {

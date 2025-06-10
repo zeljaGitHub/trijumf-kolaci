@@ -84,3 +84,6 @@
   object-fit: contain;
   filter: none; /* Ukloni invert ako su strelice već bele ili providne */
 }
+
+@media (max-width: 768px) {
+}
