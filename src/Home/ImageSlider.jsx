@@ -2,12 +2,10 @@ import { useState } from "react";
 import "./ImageSlider.css";
 
 const ImageSlider = () => {
-  // Podaci o slikama - putanja i naziv
   const images = [
     { src: "/slider/slider1.png", title: "Priroda" },
     { src: "/slider/slider2.png", title: "Grad" },
     { src: "/slider/slider3.png", title: "More" },
-    { src: "/slider/slider4.png", title: "Planine" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +22,6 @@ const ImageSlider = () => {
     );
   };
 
-  // Uzimamo 3 slike za prikaz - prethodnu, trenutnu i sledeću
   const visibleImages = [
     images[(currentIndex - 1 + images.length) % images.length],
     images[currentIndex],
@@ -34,7 +31,7 @@ const ImageSlider = () => {
   return (
     <div className="slider-wrapper">
       <button className="arrow-button left-arrow" onClick={prevSlide}>
-        &larr;
+        <img src="/left-arrow.png" alt="Levo" className="arrow-icon" />
       </button>
 
       <div className="slider-container">
@@ -52,7 +49,7 @@ const ImageSlider = () => {
       </div>
 
       <button className="arrow-button right-arrow" onClick={nextSlide}>
-        &rarr;
+        <img src="/right-arrow.png" alt="Desno" className="arrow-icon" />
       </button>
     </div>
   );

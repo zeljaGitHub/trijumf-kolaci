@@ -9,12 +9,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-wave">
         <div className="white-bg"></div>
-        <img src="/footer-bg.png" alt="footer dekoracija" />
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/footer2.png" />
+          <img src="/footer-bg.png" alt="footer dekoracija" />
+        </picture>
       </div>
 
       <div className="footer-content">
         {/* Leva kolona */}
-        <div className="footer-section">
+        <div className="footer-section footer-section-left">
           <img src={logo} alt="Logo" className="footer-logo" />
           <p>
             Pravljenje domaćih kolača po najboljim receptima, sa pažnjom na

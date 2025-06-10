@@ -26,3 +26,13 @@
   color: white;
   pointer-events: none; /* tekst neće smetati klikovima na sliku */
 }
+
+.h2-products-margin {
+  margin-top: -2rem;
+}
+
+@media (max-width: 768px) {
+  .h2-products-margin h2 {
+    font-size: 1rem;
+  }
+}

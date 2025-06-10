@@ -31,7 +31,7 @@ const KontaktForma = () => {
   return (
     <div className="kontakt-container">
       <div className="kontakt-info-text">
-        <img src="./linija-lj.png" alt="" />
+        <img src="./linija-lj.png" alt="" className="linija-lj-forma" />
         <p className="kontakt-info-text">
           Za sve dodatne informacije, personalizovane ponude ili dogovor oko
           porudžbina, naš tim vam stoji na raspolaganju – pišite nam ili nas

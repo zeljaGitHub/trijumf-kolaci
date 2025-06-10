@@ -2,9 +2,9 @@ import "./Products_two.css";
 
 const Products_two = () => {
   return (
-    <div className="container products-two-color">
-      <div className="container-2 ptm">
-        <img src="" alt="" />
+    <div className="products-two-color">
+      <div className="container-3">
+        <img src="./linija-lj.png" alt="" className="linija-lj-products-two" />
         <h4>Svi naši proizvodi</h4>
         <p>Preuzmite naše kataloge i otkrijte šta sve imamo u ponudi.</p>
         <p>Kvalitet, tradicija i ukus na jednom mestu.</p>
@@ -39,7 +39,7 @@ const Products_two = () => {
           pozovite, tu smo da zajedno kreiramo savršene slatke trenutke.
         </p>
         <button></button>
-        <img src="" alt="" />
+
         <div className="products-gallery">
           <img src="./products1.jpg" alt="" />
           <img src="./products2.jpg" alt="" />

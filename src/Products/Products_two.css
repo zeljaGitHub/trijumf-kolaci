@@ -1,15 +1,33 @@
 .products-two-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   background-color: #f3ede7;
 }
 
-.ptm {
-  padding-top: 5rem;
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vw; /* sada možeš smanjiti širinu ovde bez problema */
+  margin: 0 auto;
+}
+
+.linija-lj-products-two {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .custom-button {
@@ -17,14 +35,18 @@
   align-items: center;
   gap: 8px; /* razmak između teksta i ikonice */
   padding: 10px 16px;
-  border: 3px solid black; /* <-- OVDE je dodato */
+  border: 3px solid #d7bd7a;
   color: black;
-  font-size: 16px;
+  font-size: 1.5rem;
   cursor: pointer;
-  border-radius: 22px;
+  border-radius: 30px;
   background-color: transparent; /* ako želiš providnu pozadinu */
   justify-content: center;
   width: 18rem;
+}
+
+.custom-button:hover {
+  background-color: white;
 }
 
 .custom-button .icon {
@@ -34,16 +56,49 @@
 
 .products-gallery {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  margin-bottom: 6rem;
+  flex-wrap: wrap; /* slike će se slagati i u više redova ako treba */
+  justify-content: center; /* centrirano horizontalno */
+  align-items: center; /* centrirano vertikalno */
+  gap: 2rem;
+  margin: 2.5rem 0;
+  width: 100%;
 }
 
 .products-gallery img {
+  width: 100%;
+  max-width: 390px; /* ograniči maksimalnu širinu po slici */
+  height: auto;
   border-radius: 2rem;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .isprekidana-linija {
   margin-top: 1rem;
+  margin-bottom: 4rem;
   width: 92%;
+}
+
+.container-3 h4 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.container-3 p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50vw;
+}
+
+@media (max-width: 1200px) {
+  .container-3 {
+    width: 90vw;
+  }
+  .container-3 p {
+    font-size: 1rem;
+    width: 70vw;
+  }
+  .custom-button {
+    font-size: 1.2rem;
+  }
 }

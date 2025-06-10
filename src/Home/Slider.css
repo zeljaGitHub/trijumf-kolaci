@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @keyframes slide {
+  from {
+    transform: translate3d(-50%, 0, 0); 
+  }
+  to {
+    transform: translate3d(0, 0, 0); 
+  }
+} */
+
+@keyframes slide {
+  from {
+    transform: translate3d(0, 0, 0); /* Klizi udesno */
+  }
+  to {
+    transform: translate3d(-50%, 0, 0); /* Počinje s leva */
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 30s linear infinite;
+  will-change: transform;
+}
+
+.logos-slide img {
+  height: 400px;
+  margin: 0 20px;
+  transition: filter 0.3s ease;
+}
+
+/* Hover efekat */
+.logos:hover .logos-slide img {
+  filter: grayscale(1);
+}
+
+.logos:hover .logos-slide img:hover {
+  filter: grayscale(0);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}

@@ -1,6 +1,60 @@
 .about-two {
   display: flex;
-  justify-content: center; /* horizontalno */
-  align-items: center; /* vertikalno */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 3rem;
+}
+
+.linija-lj-about-two {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.about-two h4 {
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.about-two p {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.about-two button {
+  background-color: #b32374;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 4rem;
+  border-radius: 9999px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.about-two button:hover {
+  background-color: #9b1e66;
+}
+
+@media (max-width: 768px) {
+  .about-two {
+    width: 90vw;
+  }
+
+  .about-two h4 {
+    font-size: 2rem;
+  }
+
+  .about-two p {
+    font-size: 1rem;
+  }
+
+  .about-two button {
+    font-size: 1.2rem;
+  }
 }

@@ -14,8 +14,10 @@
 
 .slider-images {
   display: flex;
-  gap: 30px;
+  gap: 7rem;
   transition: transform 0.5s ease;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .slider {
@@ -27,8 +29,8 @@
 }
 
 .slider-image {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
@@ -42,7 +44,7 @@
 
 .image-title {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #333;
   text-align: center;
@@ -53,19 +55,18 @@
 }
 
 .arrow-button {
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: transparent;
   border: none;
-  padding: 12px 18px;
-  font-size: 24px;
+  padding: 0;
   cursor: pointer;
-  border-radius: 50%;
   z-index: 2;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .arrow-button:hover {
-  background: rgba(0, 0, 0, 0.9);
   transform: scale(1.1);
 }
 
@@ -75,4 +76,11 @@
 
 .right-arrow {
   margin-left: 15px;
+}
+
+.arrow-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  filter: none; /* Ukloni invert ako su strelice već bele ili providne */
 }

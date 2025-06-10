@@ -3,8 +3,8 @@ import "./About_two.css";
 
 const About_two = () => {
   return (
-    <div className="container-2 about-two">
-      <img src="" alt="" />
+    <div className="about-two">
+      <img src="./linija-lj.png" alt="" className="linija-lj-about-two" />
       <h4>Naša priča</h4>
       <p>
         Sve je počelo iz ljubavi prema domaćim kolačima, onim pravim -
