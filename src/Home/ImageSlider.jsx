@@ -3,9 +3,9 @@ import "./ImageSlider.css";
 
 const ImageSlider = () => {
   const images = [
-    { src: "/slider/slider1.png", title: "Priroda" },
-    { src: "/slider/slider2.png", title: "Grad" },
-    { src: "/slider/slider3.png", title: "More" },
+    { src: "/slider/slider1.png", title: "Baklava" },
+    { src: "/slider/slider2.png", title: "Minjon kuglice - Mix" },
+    { src: "/slider/slider3.png", title: "Krem vanilice" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,24 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* @keyframes slide {
-  from {
-    transform: translate3d(-50%, 0, 0); 
-  }
-  to {
-    transform: translate3d(0, 0, 0); 
-  }
-} */
-
 @keyframes slide {
-  from {
-    transform: translate3d(0, 0, 0); /* Klizi udesno */
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: translate3d(-50%, 0, 0); /* Počinje s leva */
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -31,12 +16,13 @@
 
 .logos-slide {
   display: inline-block;
-  animation: slide 30s linear infinite;
+  white-space: nowrap;
   will-change: transform;
 }
 
 .logos-slide img {
-  height: 400px;
+  display: inline-block;
+  height: 230px;
   margin: 0 20px;
   transition: filter 0.3s ease;
 }

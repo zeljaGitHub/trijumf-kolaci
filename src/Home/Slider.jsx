@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Slider.css";
 
 const images = [
@@ -13,15 +13,34 @@ const images = [
 ];
 
 const Slider = () => {
-  // Dupliramo niz slika da napravimo beskrajnu petlju
-  const fullImageList = [...images, ...images];
+  const slideRef = useRef(null);
+  const requestRef = useRef();
+  const startTimeRef = useRef();
+  const speed = 50; // px/s - možete podesiti brzinu
+
+  const animate = (timestamp) => {
+    if (!startTimeRef.current) startTimeRef.current = timestamp;
+    const elapsed = timestamp - startTimeRef.current;
+    const translateX =
+      (-(elapsed / 1000) * speed) % (slideRef.current.scrollWidth / 2);
+
+    slideRef.current.style.transform = `translateX(${translateX}px)`;
+    requestRef.current = requestAnimationFrame(animate);
+  };
+
+  useEffect(() => {
+    requestRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, []);
 
   return (
-    <div className="logos">
-      <div className="logos-slide">
-        {fullImageList.map((img, index) => (
-          <img key={index} src={`/slider1/${img}`} alt="" />
-        ))}
+    <div className="logos-wrapper">
+      <div className="logos">
+        <div className="logos-slide" ref={slideRef}>
+          {[...images, ...images].map((img, index) => (
+            <img key={index} src={`/slider1/${img}`} alt="" />
+          ))}
+        </div>
       </div>
     </div>
   );
