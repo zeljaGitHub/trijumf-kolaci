@@ -51,4 +51,23 @@
   .values-section {
     background-image: url("./about-four-1-mobile.png");
   }
+  .values-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .arrow-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .value-box {
+    max-width: 100%;
+    flex: none;
+  }
 }

@@ -18,6 +18,8 @@
   transition: transform 0.5s ease;
   padding-left: 5rem;
   padding-right: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider {
@@ -33,13 +35,11 @@
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
 }
 
-.slide.active .slider-image {
+.slider.active .slider-image {
   transform: scale(1.05);
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
 }
 
 .image-title {
@@ -50,7 +50,7 @@
   text-align: center;
 }
 
-.slide:not(.active) .image-title {
+.slider:not(.active) .image-title {
   color: #666;
 }
 
@@ -82,8 +82,53 @@
   width: 2rem;
   height: 2rem;
   object-fit: contain;
-  filter: none; /* Ukloni invert ako su strelice već bele ili providne */
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
+  .slider-wrapper {
+    padding: 10px;
+    max-width: 100vw;
+  }
+
+  .slider-images {
+    gap: 0;
+    padding: 0;
+  }
+
+  .slider-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .slider.active-mobile .slider-image {
+    transform: scale(1);
+  }
+
+  .image-title {
+    font-size: 1.2rem;
+  }
+
+  .arrow-button {
+    padding: 5px;
+  }
+
+  .left-arrow {
+    margin-right: 5px;
+  }
+
+  .right-arrow {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .image-title {
+    font-size: 1rem;
+  }
 }

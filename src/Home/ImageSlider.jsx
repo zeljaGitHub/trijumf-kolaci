@@ -3,9 +3,12 @@ import "./ImageSlider.css";
 
 const ImageSlider = () => {
   const images = [
-    { src: "/slider/slider1.png", title: "Baklava" },
-    { src: "/slider/slider2.png", title: "Minjon kuglice - Mix" },
-    { src: "/slider/slider3.png", title: "Krem vanilice" },
+    { src: "/slider/slider1.png", title: "Kokos kuglice" },
+    { src: "/slider/slider2.png", title: "Breskvice" },
+    { src: "/slider/slider3.png", title: "Kokos kiflice" },
+    { src: "/slider/slider4.png", title: "Vesele vanilice" },
+    { src: "/slider/slider5.png", title: "Keks puslice čokolada" },
+    { src: "/slider/slider6.png", title: "Grilijaš štanglice" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,11 +25,15 @@ const ImageSlider = () => {
     );
   };
 
-  const visibleImages = [
-    images[(currentIndex - 1 + images.length) % images.length],
-    images[currentIndex],
-    images[(currentIndex + 1) % images.length],
-  ];
+  // Za desktop prikazujemo 3 slike, za mobilne samo trenutnu
+  const isMobile = window.innerWidth <= 768;
+  const visibleImages = isMobile
+    ? [images[currentIndex]]
+    : [
+        images[(currentIndex - 1 + images.length) % images.length],
+        images[currentIndex],
+        images[(currentIndex + 1) % images.length],
+      ];
 
   return (
     <div className="slider-wrapper">
@@ -39,7 +46,9 @@ const ImageSlider = () => {
           {visibleImages.map((image, index) => (
             <div
               key={index}
-              className={`slider ${index === 1 ? "active" : ""}`}
+              className={`slider ${
+                !isMobile && index === 1 ? "active" : "active-mobile"
+              }`}
             >
               <img src={image.src} alt={image.title} className="slider-image" />
               <p className="image-title">{image.title}</p>

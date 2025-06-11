@@ -8,7 +8,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-wave">
-        <div className="white-bg"></div>
         <picture>
           <source media="(max-width: 768px)" srcSet="/footer2.png" />
           <img src="/footer-bg.png" alt="footer dekoracija" />

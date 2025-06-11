@@ -9,16 +9,40 @@ const slides = [
     text: "Naša priča počela je 2015. godine, kada smo sa strašću prema domaćim kolačima i keksevima odlučili da delimo te ukuse sa drugima. Danas, sa timom od 70 radnika, ponosno proizvodimo više od dve tone kolača i keksa dnevno. <br> <br> Naš asortiman broji oko 60 različitih proizvoda, a svi naši kolači napravljeni su sa pažljivo odabranim sastojcima i puno ljubavi. I dalje se trudimo da zadržimo autentičan domaći ukus, koji će svakom našem kupcu doneti osmeh.",
   },
   {
-    bigImage: "/carousel/Aleksandar.png",
+    bigImage: "/carousel/Jovana.png",
     title: "Zimnica",
     subtitle: "Ukus detinjstva",
     text: "Domaća zimnica spremljena sa ljubavlju.",
   },
   {
-    bigImage: "/carousel/Aleksandar.png",
+    bigImage: "/carousel/Marko.png",
     title: "Smrznuti proizvodi",
     subtitle: "Zdravi i praktični",
     text: "Uživajte u kvalitetu tokom cele godine.",
+  },
+  {
+    bigImage: "/carousel/Jelena.png",
+    title: "Smrznuti proizvodi",
+    subtitle: "Zdravi i praktični",
+    text: "Uživajte u kvalitetu tokom cele godine.",
+  },
+  {
+    bigImage: "/carousel/Bratislav.png",
+    title: "Zimnica",
+    subtitle: "Ukus detinjstva",
+    text: "Domaća zimnica spremljena sa ljubavlju.",
+  },
+  {
+    bigImage: "/carousel/Joja.png",
+    title: "Aleksandar Stanić",
+    subtitle: "Osnivač",
+    text: "Naša priča počela je 2015. godine, kada smo sa strašću prema domaćim kolačima i keksevima odlučili da delimo te ukuse sa drugima. Danas, sa timom od 70 radnika, ponosno proizvodimo više od dve tone kolača i keksa dnevno. <br> <br> Naš asortiman broji oko 60 različitih proizvoda, a svi naši kolači napravljeni su sa pažljivo odabranim sastojcima i puno ljubavi. I dalje se trudimo da zadržimo autentičan domaći ukus, koji će svakom našem kupcu doneti osmeh.",
+  },
+  {
+    bigImage: "/carousel/Jeka.png",
+    title: "Zimnica",
+    subtitle: "Ukus detinjstva",
+    text: "Domaća zimnica spremljena sa ljubavlju.",
   },
 ];
 
@@ -29,12 +53,12 @@ const About_five = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 1110000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container about-five-overlap">
       {slides.map((slide, index) => (
         <div
           className={`slide ${index === currentSlide ? "active" : ""}`}

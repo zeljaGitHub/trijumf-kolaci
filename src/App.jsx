@@ -5,6 +5,7 @@ import Products from "./Products/Products";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   const location = useLocation();
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Proizvodi" element={<Products />} />

@@ -5,7 +5,7 @@ import "./Clients.css";
 const Clients = () => {
   return (
     <div className="clients-container">
-      <h4 className="clientsh4">Nasi zadovoljni klijenti</h4>
+      <h4 className="clientsh4">Naši zadovoljni klijenti</h4>
       <Slider />
     </div>
   );
