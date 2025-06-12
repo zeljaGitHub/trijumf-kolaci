@@ -5,7 +5,11 @@ const Gallery = () => {
   return (
     <div className="container-2">
       <h4 className="galerijah4">Galerija proizvoda</h4>
-      <img src="" alt="" />
+      <img
+        src="isprekidana-linija-lj.png"
+        alt=""
+        className="isprekidana-linija-lj"
+      />
       <div className="gallery">
         <img src="/galleryeigth/1.jpg" alt="Slika 1" />
         <img src="/galleryeigth/2.jpg" alt="Slika 2" />

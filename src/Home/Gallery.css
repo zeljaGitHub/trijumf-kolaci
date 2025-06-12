@@ -16,6 +16,10 @@
   font-size: 3rem;
 }
 
+.isprekidana-linija-lj {
+  width: 71.5%;
+}
+
 /* Responzivno ponašanje */
 @media (max-width: 1024px) {
   .gallery {
@@ -32,5 +36,9 @@
 @media (max-width: 480px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .galerijah4 {
+    font-size: 2rem;
   }
 }

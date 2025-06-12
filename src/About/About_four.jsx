@@ -29,6 +29,9 @@ const About_four = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [currentIndex, setCurrentIndex] = useState(0);
   const timerRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const carouselRef = useRef(null);
 
   // Update isMobile on window resize
   useEffect(() => {
@@ -52,15 +55,15 @@ const About_four = () => {
   }, [currentIndex, isMobile]);
 
   const goPrev = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
+    e?.preventDefault();
+    e?.stopPropagation();
     setCurrentIndex((prev) => (prev - 1 + valueData.length) % valueData.length);
     resetTimer();
   };
 
   const goNext = (e) => {
-    e.preventDefault();
-    e.stopPropagation();
+    e?.preventDefault();
+    e?.stopPropagation();
     setCurrentIndex((prev) => (prev + 1) % valueData.length);
     resetTimer();
   };
@@ -72,9 +75,41 @@ const About_four = () => {
     }, 4000);
   };
 
+  // Swipe handlers
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+
+    const difference = touchStartX.current - touchEndX.current;
+    if (difference > 50) {
+      // Swipe left - go next
+      goNext();
+    } else if (difference < -50) {
+      // Swipe right - go prev
+      goPrev();
+    }
+
+    // Reset values
+    touchStartX.current = 0;
+    touchEndX.current = 0;
+  };
+
   return (
     <div className="values-section">
-      <div className="values-content">
+      <div
+        className="values-content"
+        ref={carouselRef}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         {isMobile ? (
           <>
             <div className="value-box" key={currentIndex}>
@@ -87,7 +122,7 @@ const About_four = () => {
             </div>
             <button
               type="button"
-              className="arrow-button"
+              className="arrow-button prev"
               onClick={goPrev}
               aria-label="Previous"
             >
@@ -95,7 +130,7 @@ const About_four = () => {
             </button>
             <button
               type="button"
-              className="arrow-button"
+              className="arrow-button next"
               onClick={goNext}
               aria-label="Next"
             >
