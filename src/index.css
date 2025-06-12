@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+* {
+  outline: 1px solid red !important;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -131,3 +135,7 @@ h1 {
 }
 
 /* ================================================================ */
+
+body {
+  overflow-x: hidden;
+}
