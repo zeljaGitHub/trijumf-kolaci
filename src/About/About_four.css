@@ -1,5 +1,5 @@
 .values-section {
-  background-image: url("./af.png");
+  background-image: url("/af.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -52,7 +52,7 @@
 
 @media (max-width: 768px) {
   .values-section {
-    background-image: url("./afm.png");
+    background-image: url("/afm.png");
   }
   .values-content {
     flex-direction: row;
