@@ -25,6 +25,17 @@
   animation: pulse 0.3s ease;
 }
 
+.talas {
+  position: absolute;
+  bottom: 0; /* Postavlja talas tačno na dno hero sekcije */
+  left: 0;
+  width: 100%;
+  background-image: url("putanja-do-talasa.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);

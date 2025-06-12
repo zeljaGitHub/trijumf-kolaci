@@ -6,7 +6,11 @@ const Linija = () => {
       <img
         src="./linija-lj.png"
         alt=""
-        style={{ marginTop: "3.5rem", marginBottom: "3.5rem" }}
+        style={{
+          marginTop: "3.5rem",
+          marginBottom: "3.5rem",
+          width: "13rem",
+        }}
       />
     </div>
   );

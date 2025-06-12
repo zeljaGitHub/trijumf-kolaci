@@ -16,7 +16,7 @@ const Slider = () => {
   const slideRef = useRef(null);
   const requestRef = useRef();
   const startTimeRef = useRef();
-  const speed = 50; // px/s - možete podesiti brzinu
+  const speed = 100; // px/s - možete podesiti brzinu
 
   const animate = (timestamp) => {
     if (!startTimeRef.current) startTimeRef.current = timestamp;

@@ -1,5 +1,5 @@
 .values-section {
-  background-image: url("./about-four-1.png");
+  background-image: url("./af.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -52,7 +52,7 @@
 
 @media (max-width: 768px) {
   .values-section {
-    background-image: url("./about-four-1-mobile.png");
+    background-image: url("./afm.png");
   }
   .values-content {
     flex-direction: row;
@@ -62,7 +62,7 @@
     width: 80%;
   }
 
-  .arrow-button {
+  .arrow-button-a4 {
     position: absolute;
     background: rgba(255, 255, 255, 0.3);
     border: none;
@@ -75,11 +75,11 @@
     transform: translateY(-50%);
   }
 
-  .arrow-button.prev {
+  .arrow-button-a4.prev {
     left: 5px;
   }
 
-  .arrow-button.next {
+  .arrow-button-a4.next {
     right: 5px;
   }
 
@@ -88,4 +88,10 @@
     flex: none;
     width: 100%;
   }
+}
+
+.arrow-img {
+  width: 24px; /* ili bilo koju drugu veličinu po želji */
+  height: auto;
+  filter: brightness(0) invert(1);
 }

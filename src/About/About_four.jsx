@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { MdArrowBack, MdArrowForward } from "react-icons/md";
+import React, { useState, useRef } from "react";
 import "./About_four.css";
 
 const valueData = [
@@ -16,7 +15,7 @@ const valueData = [
   {
     img: "./33.png",
     title: "Vešti poslastičari",
-    desc: "Naši iskusni poslastičari u svaki kolač unose znanje, ljubav i tradiciju. Zato su naši proizvodi puni ukusa i topline domaće kuhinje.",
+    desc: "Naši iskusni poslastičari u svaki klač unose znanje, ljubav i tradiciju. Zato su naši proizvodi puni ukusa i topline domaće kuhinje.",
   },
   {
     img: "./44.png",
@@ -28,51 +27,27 @@ const valueData = [
 const About_four = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const timerRef = useRef(null);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
   const carouselRef = useRef(null);
 
   // Update isMobile on window resize
-  useEffect(() => {
+  React.useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Auto-advance carousel every 4 seconds on mobile
-  useEffect(() => {
-    if (!isMobile) {
-      clearTimeout(timerRef.current);
-      setCurrentIndex(0);
-      return;
-    }
-    timerRef.current = setTimeout(() => {
-      setCurrentIndex((prev) => (prev + 1) % valueData.length);
-    }, 4000);
-
-    return () => clearTimeout(timerRef.current);
-  }, [currentIndex, isMobile]);
-
   const goPrev = (e) => {
     e?.preventDefault();
     e?.stopPropagation();
     setCurrentIndex((prev) => (prev - 1 + valueData.length) % valueData.length);
-    resetTimer();
   };
 
   const goNext = (e) => {
     e?.preventDefault();
     e?.stopPropagation();
     setCurrentIndex((prev) => (prev + 1) % valueData.length);
-    resetTimer();
-  };
-
-  const resetTimer = () => {
-    clearTimeout(timerRef.current);
-    timerRef.current = setTimeout(() => {
-      setCurrentIndex((prev) => (prev + 1) % valueData.length);
-    }, 4000);
   };
 
   // Swipe handlers
@@ -122,19 +97,19 @@ const About_four = () => {
             </div>
             <button
               type="button"
-              className="arrow-button prev"
+              className="arrow-button-a4 prev"
               onClick={goPrev}
               aria-label="Previous"
             >
-              <MdArrowBack size={24} />
+              <img src="left-arrow.png" alt="Previous" className="arrow-img" />
             </button>
             <button
               type="button"
-              className="arrow-button next"
+              className="arrow-button-a4 next"
               onClick={goNext}
               aria-label="Next"
             >
-              <MdArrowForward size={24} />
+              <img src="right-arrow.png" alt="Next" className="arrow-img" />
             </button>
           </>
         ) : (

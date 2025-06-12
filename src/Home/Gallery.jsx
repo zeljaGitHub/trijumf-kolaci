@@ -3,7 +3,7 @@ import "./Gallery.css";
 
 const Gallery = () => {
   return (
-    <div className="container-2">
+    <div className="container-22">
       <h4 className="galerijah4">Galerija proizvoda</h4>
       <img
         src="isprekidana-linija-lj.png"
