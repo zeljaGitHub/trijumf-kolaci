@@ -35,10 +35,6 @@
   z-index: 11;
 }
 
-.talas-mobilni {
-  display: none;
-}
-
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -69,5 +65,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 11;
+  }
+}
+
+@media (min-width: 1000px) {
+  .talas-mobilni {
+    display: none;
   }
 }

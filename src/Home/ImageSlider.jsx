@@ -3,12 +3,15 @@ import "./ImageSlider.css";
 
 const ImageSlider = () => {
   const images = [
-    { src: "/slider/slider1.png", title: "Kokos kuglice" },
-    { src: "/slider/slider2.png", title: "Breskvice" },
-    { src: "/slider/slider3.png", title: "Kokos kiflice" },
-    { src: "/slider/slider4.png", title: "Vesele vanilice" },
-    { src: "/slider/slider5.png", title: "Keks puslice čokolada" },
-    { src: "/slider/slider6.png", title: "Grilijaš štanglice" },
+    { src: "/slider/slider1.png", title: "Baklava" },
+    { src: "/slider/slider2.png", title: "Minjon kuglice" },
+    { src: "/slider/slider3.png", title: "Kokos kuglice" },
+    { src: "/slider/slider4.png", title: "Breskvice" },
+    { src: "/slider/slider5.png", title: "Kokos kiflice" },
+    { src: "/slider/slider6.png", title: "Vesele vanilice" },
+    { src: "/slider/slider7.png", title: "Keks puslice čokolada" },
+    { src: "/slider/slider8.png", title: "Grilijaš štanglice" },
+    { src: "/slider/slider9.png", title: "Krem vanilice" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

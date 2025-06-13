@@ -178,4 +178,7 @@
     width: 18px;
     height: 18px;
   }
+  .arrow-button:hover {
+    background: none;
+  }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./About_two.css";
 
 const About_two = () => {
@@ -23,7 +24,9 @@ const About_two = () => {
         ostaje isti - da vam pružimo autentičan, domaći ukus koji vraća osmeh na
         lice.
       </p>
-      <button>Naši proizvodi</button>
+      <Link to="/Proizvodi">
+        <button>Naši proizvodi</button>
+      </Link>
     </div>
   );
 };

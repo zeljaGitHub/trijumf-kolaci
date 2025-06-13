@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Info.css"; // ako koristiš posebni CSS
 
 const Info = () => {
@@ -34,7 +35,9 @@ const Info = () => {
           pozovite – spremni smo da kreiramo slatke specijalitete baš po vašoj
           meri!
         </p>
-        <button>Više o nama</button>
+        <Link to="/O-nama">
+          <button>Više o nama</button>
+        </Link>
       </div>
     </section>
   );

@@ -9,19 +9,34 @@ const Products_two = () => {
         <p>Preuzmite naše kataloge i otkrijte šta sve imamo u ponudi.</p>
         <p>Kvalitet, tradicija i ukus na jednom mestu.</p>
         <div className="buttons">
-          <button className="custom-button">
+          <button
+            className="custom-button"
+            onClick={() => window.open("/katalozi/kolaci.pdf", "_blank")}
+          >
             Kolači
             <img src="download-icon.png" alt="Ikonica" className="icon" />
           </button>
-          <button className="custom-button">
+
+          <button
+            className="custom-button"
+            onClick={() => window.open("/katalozi/smrznuti.pdf", "_blank")}
+          >
             Smrznuti proizvodi
             <img src="download-icon.png" alt="Ikonica" className="icon" />
           </button>
-          <button className="custom-button">
+
+          <button
+            className="custom-button"
+            onClick={() => window.open("/katalozi/zimnica.pdf", "_blank")}
+          >
             Zimnica
             <img src="download-icon.png" alt="Ikonica" className="icon" />
           </button>
-          <button className="custom-button">
+
+          <button
+            className="custom-button"
+            onClick={() => window.open("/katalozi/sirevi.pdf", "_blank")}
+          >
             Sirevi
             <img src="download-icon.png" alt="Ikonica" className="icon" />
           </button>
