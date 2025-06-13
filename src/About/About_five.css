@@ -60,6 +60,9 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .about-five-overlap {
+    margin-bottom: 0;
+  }
   .slide {
     flex-direction: column;
     text-align: center;
@@ -103,4 +106,76 @@
 
 .dot.active {
   background-color: black;
+}
+
+/* Osnovni stilovi za strelice */
+.arrow-controls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+.arrow-button {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 20px; /* Dodajemo marginu za desktop */
+}
+
+.arrow-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.arrow-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Desktop verzija - strelice van kontejnera */
+@media (min-width: 769px) {
+  .arrow-controls {
+    width: calc(100% + 100px); /* Širina izvan kontejnera */
+    left: -50px; /* Centriranje */
+  }
+
+  .arrow-button {
+    margin: 0;
+    position: relative;
+  }
+
+  .arrow-button.prev {
+    left: -30px; /* Pomeranje levo */
+  }
+
+  .arrow-button.next {
+    right: -30px; /* Pomeranje desno */
+  }
+}
+
+/* Mobilna verzija - strelice preko slajda */
+@media (max-width: 768px) {
+  .arrow-controls {
+    padding: 0 10px;
+  }
+
+  .arrow-button {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+
+  .arrow-button img {
+    width: 18px;
+    height: 18px;
+  }
 }
