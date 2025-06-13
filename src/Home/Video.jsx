@@ -40,7 +40,7 @@ const Component1 = () => {
     <div className="full-screen c1" style={{ position: "relative" }}>
       {!videoLoaded && <div className="loading">Loading Video...</div>}
       <video ref={videoRef} className="video" autoPlay loop muted={isMuted}>
-        <source src="/frenki_video.mp4" type="video/mp4" />
+        <source src="/Trijumf-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <button
