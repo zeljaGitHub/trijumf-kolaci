@@ -61,3 +61,9 @@
     width: 13rem;
   }
 }
+
+@media (min-width: 2500px) {
+  .about-two p {
+    font-size: 1.5rem;
+  }
+}

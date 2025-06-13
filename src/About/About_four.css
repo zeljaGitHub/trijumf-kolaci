@@ -95,3 +95,9 @@
   height: auto;
   filter: brightness(0) invert(1);
 }
+
+@media (min-width: 2500px) {
+  .values-section {
+    height: 780px;
+  }
+}

@@ -250,8 +250,11 @@
 }
 
 @media (min-width: 2500px) {
-  .nav-left,
-  .nav-right {
-    margin-top: 0;
+  .navbar {
+    background-position: center -40px;
   }
+  /* .nav-left,
+  .nav-right {
+    margin-top: -2rem;
+  } */
 }
