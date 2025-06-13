@@ -30,10 +30,13 @@
   bottom: 0; /* Postavlja talas tačno na dno hero sekcije */
   left: 0;
   width: 100%;
-  background-image: url("putanja-do-talasa.svg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 11;
+}
+
+.talas-mobilni {
+  display: none;
 }
 
 @keyframes pulse {
@@ -54,5 +57,17 @@
     right: 30px;
     width: 30px;
     height: 30px;
+  }
+  .talas {
+    display: none;
+  }
+  .talas-mobilni {
+    position: absolute;
+    bottom: 0; /* Postavlja talas tačno na dno hero sekcije */
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
   }
 }

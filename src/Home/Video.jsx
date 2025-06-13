@@ -51,6 +51,7 @@ const Component1 = () => {
         {isMuted ? <FaVolumeMute size={24} /> : <FaVolumeUp size={24} />}
       </button>
       <img src="./talas.png" alt="" className="talas" />
+      <img src="./talasi-mobilni.png" alt="" className="talas-mobilni" />
     </div>
   );
 };

@@ -36,9 +36,23 @@ const Footer = () => {
           <p>060/64-13-665</p>
           <p>trijumfstanic@gmail.com</p>
           <div className="footer-socials">
-            <img src={facebookIcon} alt="Facebook" />
-            <img src={instagramIcon} alt="Instagram" />
-            <img src={youtubeIcon} alt="YouTube" />
+            <a
+              href="https://www.facebook.com/people/Trijumf-Stani%C4%87/61577086255509/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={facebookIcon} alt="Facebook" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/trijumfstanic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagramIcon} alt="Instagram" />
+            </a>
+
+            {/* <img src={youtubeIcon} alt="YouTube" /> */}
           </div>
         </div>
 
