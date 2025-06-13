@@ -130,3 +130,9 @@
     width: 20rem;
   }
 }
+
+@media (max-width: 768px) {
+  .linija-lj-forma {
+    width: 13rem;
+  }
+}

@@ -1,3 +1,4 @@
+/* Animacija */
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -24,18 +25,10 @@
   display: inline-block;
   height: 230px;
   margin: 0 26px;
+  filter: grayscale(1); /* Podrazumevano sivi logoi */
   transition: filter 0.3s ease;
 }
 
-/* Hover efekat */
-.logos:hover .logos-slide img {
-  filter: grayscale(1);
-}
-
-.logos:hover .logos-slide img:hover {
-  filter: grayscale(0);
-}
-
-.logos:hover .logos-slide {
-  animation-play-state: paused;
+.logos-slide img:hover {
+  filter: grayscale(0); /* Boja na hover */
 }
