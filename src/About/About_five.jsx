@@ -12,29 +12,29 @@ const slides = [
   {
     bigImage: "/carousel/Jovana.png",
     mobileImage: "/carousel/jovana-mobile.png",
-    title: "Zimnica",
-    subtitle: "Ukus detinjstva",
+    title: "Aleksandar Stanić",
+    subtitle: "Osnivač",
     text: "Domaća zimnica spremljena sa ljubavlju.",
   },
   {
     bigImage: "/carousel/Marko.png",
     mobileImage: "/carousel/marko-mobile.png",
-    title: "Smrznuti proizvodi",
-    subtitle: "Zdravi i praktični",
+    title: "Aleksandar Stanić",
+    subtitle: "Osnivač",
     text: "Uživajte u kvalitetu tokom cele godine.",
   },
   {
     bigImage: "/carousel/Jelena.png",
     mobileImage: "/carousel/jelena-mobile.png",
-    title: "Smrznuti proizvodi",
-    subtitle: "Zdravi i praktični",
+    title: "Aleksandar Stanić",
+    subtitle: "Osnivač",
     text: "Uživajte u kvalitetu tokom cele godine.",
   },
   {
     bigImage: "/carousel/Bratislav.png",
     mobileImage: "/carousel/bratislav-mobile.png",
-    title: "Zimnica",
-    subtitle: "Ukus detinjstva",
+    title: "Aleksandar Stanić",
+    subtitle: "Osnivač",
     text: "Domaća zimnica spremljena sa ljubavlju.",
   },
   {
@@ -47,8 +47,8 @@ const slides = [
   {
     bigImage: "/carousel/Jeka.png",
     mobileImage: "/carousel/jeka-mobile.png",
-    title: "Zimnica",
-    subtitle: "Ukus detinjstva",
+    title: "Aleksandar Stanić",
+    subtitle: "Osnivač",
     text: "Domaća zimnica spremljena sa ljubavlju.",
   },
 ];

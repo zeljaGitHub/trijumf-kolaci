@@ -248,3 +248,10 @@
 .mobile-menu .nav-link.active {
   color: #d7bd7a;
 }
+
+@media (min-width: 2500px) {
+  .nav-left,
+  .nav-right {
+    margin-top: 0;
+  }
+}
