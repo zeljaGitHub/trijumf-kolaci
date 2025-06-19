@@ -101,3 +101,27 @@
     height: 780px;
   }
 }
+
+@media (min-width: 3700px) {
+  .values-section {
+    height: 1200px;
+  }
+  .values-content {
+    max-width: none;
+    width: 80vw;
+    margin: 0;
+    gap: 100px;
+  }
+  .value-box {
+    max-width: 500px; /* ili više */
+    flex: 1 1 400px; /* dozvoli im da budu širi */
+  }
+  .value-box h3 {
+    font-size: 2.5rem;
+  }
+
+  .value-box p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}

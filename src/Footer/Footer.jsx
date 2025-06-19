@@ -34,7 +34,7 @@ const Footer = () => {
           <p>Kovačkih Boraca 34 V</p>
           <p>36101 Kraljevo</p>
           <p>060/64-13-665</p>
-          <p>trijumfstanic@gmail.com</p>
+          <p>info@trijumfstanic.rs</p>
           <div className="footer-socials">
             <a
               href="https://www.facebook.com/people/Trijumf-Stani%C4%87/61577086255509/"

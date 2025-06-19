@@ -25,16 +25,24 @@ const Info = () => {
       <img src={imageSrc} alt="wave" className="wave-bg" />
 
       <div className="wave-content">
+        <p>Trijumf Stanić – Kvalitet na koji možete da računate</p>
         <p>
-          Tražite vrhunske domaće kolače i torte za vaš restoran,
-          poslastičarnicu ili hotel? Naša proizvodnja garantuje kvalitet,
-          autentičan ukus i savršen izgled svake poslastice! Sa pažljivo
-          odabranim sastojcima i dugogodišnjim iskustvom, donosimo vam slatke
-          trenutke vredne pamćenja. Kontaktirajte nas danas i obezbedite
-          najbolje kolače za svoje kupce! 🍰 📩 Pošaljite nam upit ili nas
-          pozovite – spremni smo da kreiramo slatke specijalitete baš po vašoj
-          meri!
+          Trijumf Stanić se bavi proizvodnjom tradicionalnih domaćih kolača
+          namenjenih maloprodaji, uz dosledan kvalitet, proverene recepte i
+          pažljivo birane sastojke.
         </p>
+        <p>
+          Pored proizvodnje, specijalizovani smo i za distribuciju robe široke
+          potrošnje, obezbeđujući pouzdanu i efikasnu isporuku širom Srbije.
+        </p>
+        <p>
+          Ako tražite sigurnog partnera za snabdevanje ili proizvođača domaćih
+          poslastica, Trijumf Stanić je pravi izbor.
+        </p>
+        <p>
+          📩 Kontaktirajte nas i saznajte više o ponudi i mogućnostima saradnje
+        </p>
+
         <Link to="/O-nama">
           <button>Više o nama</button>
         </Link>

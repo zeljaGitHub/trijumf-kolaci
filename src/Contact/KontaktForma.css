@@ -136,3 +136,10 @@
     width: 13rem;
   }
 }
+
+@media (min-width: 3700px) {
+  .kontakt-info-text {
+    max-width: 1300px;
+    font-size: 2rem;
+  }
+}

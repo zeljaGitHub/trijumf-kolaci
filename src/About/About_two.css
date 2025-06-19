@@ -67,3 +67,9 @@
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 3700px) {
+  .about-two p {
+    font-size: 2rem;
+  }
+}

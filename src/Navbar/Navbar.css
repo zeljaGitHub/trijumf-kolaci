@@ -258,3 +258,13 @@
     margin-top: -2rem;
   } */
 }
+
+@media (min-width: 3700px) {
+  .navbar {
+    font-size: 2rem;
+  }
+  .nav-left,
+  .nav-right {
+    margin-top: 0;
+  }
+}
