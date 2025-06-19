@@ -42,7 +42,7 @@ const KontaktForma = () => {
         <div className="kontakt-levo">
           <p>Kovačkih Boraca 34 V</p>
           <p>36101 Kraljevo</p>
-          <p>060/64-13-665</p>
+          <p>060/441 36 68</p>
           <p>info@trijumfstanic.rs</p>
         </div>
         <form ref={form} onSubmit={sendEmail} className="kontakt-forma">

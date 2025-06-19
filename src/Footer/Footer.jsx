@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "/logo.png"; // zameni sa pravom putanjom ako treba
+import logo from "/logo-bela.png"; // zameni sa pravom putanjom ako treba
 import facebookIcon from "/facebook.png";
 import instagramIcon from "/instagram.png";
 import youtubeIcon from "/youtube.png";
@@ -33,7 +33,7 @@ const Footer = () => {
           <h3>Kontakt</h3>
           <p>Kovačkih Boraca 34 V</p>
           <p>36101 Kraljevo</p>
-          <p>060/64-13-665</p>
+          <p>060/441 36 68</p>
           <p>info@trijumfstanic.rs</p>
           <div className="footer-socials">
             <a

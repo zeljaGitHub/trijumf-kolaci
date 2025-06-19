@@ -39,9 +39,6 @@ const Info = () => {
           Ako tražite sigurnog partnera za snabdevanje ili proizvođača domaćih
           poslastica, Trijumf Stanić je pravi izbor.
         </p>
-        <p>
-          📩 Kontaktirajte nas i saznajte više o ponudi i mogućnostima saradnje
-        </p>
 
         <Link to="/O-nama">
           <button>Više o nama</button>

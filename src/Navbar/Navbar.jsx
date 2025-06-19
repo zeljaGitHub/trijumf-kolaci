@@ -101,7 +101,7 @@ const Navbar = () => {
         <span></span>
       </button>
 
-      <img src="/logo.png" alt="logo" className="mobile-logo" />
+      <img src="/logo-bela.png" alt="logo" className="mobile-logo" />
 
       {/* Mobile menu */}
       <ul ref={menuRef} className={`mobile-menu ${isMenuOpen ? "active" : ""}`}>
