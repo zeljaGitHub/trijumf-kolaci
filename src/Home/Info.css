@@ -54,9 +54,9 @@
   .wave-bg img {
     background: rgba(0, 0, 0, 0.5);
   }
-  /* .wave-content {
+  .wave-content {
     top: 50%;
-  } */
+  }
   .wave-content p {
     font-size: 1rem;
     width: 90vw;

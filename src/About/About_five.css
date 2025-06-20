@@ -73,12 +73,13 @@
   }
 
   .right h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: -1.3rem;
+    margin-bottom: 0.2rem;
   }
 
   .right h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
