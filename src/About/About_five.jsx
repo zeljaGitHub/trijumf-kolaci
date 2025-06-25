@@ -41,7 +41,7 @@ const slides = [
     bigImage: "/carousel/Joja.png",
     mobileImage: "/carousel/joja-mobile.png",
     title: "Jovana Raković",
-    subtitle: "Referent logistike",
+    subtitle: "Podrška prodaji",
     text: "060/441 36 68 <br> jovana.rakovic@trijumfstanic.rs",
   },
   {
