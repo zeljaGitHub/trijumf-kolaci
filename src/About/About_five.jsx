@@ -13,7 +13,7 @@ const slides = [
     bigImage: "/carousel/Jovana.png",
     mobileImage: "/carousel/jovana-mobile.png",
     title: "Aleksandra Kojović",
-    subtitle: "Rukovodilac finansija",
+    subtitle: "Knjigovodstveni administrator",
     text: "060/441 36 67 <br> aleksandra.kojovic@trijumfstanic.rs",
   },
   {
@@ -27,7 +27,7 @@ const slides = [
     bigImage: "/carousel/Jelena.png",
     mobileImage: "/carousel/jelena-mobile.png",
     title: "Nevena Cvetković",
-    subtitle: "Direktor operacija",
+    subtitle: "Finansijski direktor",
     text: "060/441 36 74 <br> nevena.cvetkovic@trijumfstanic.rs",
   },
   {
