@@ -38,18 +38,18 @@ const slides = [
     text: "063/328 621 <br> zoran.jankovic@trijumfstanic.rs",
   },
   {
-    bigImage: "/carousel/Joja.png",
-    mobileImage: "/carousel/joja-mobile.png",
-    title: "Jovana Raković",
-    subtitle: "Podrška prodaji",
-    text: "060/441 36 68 <br> jovana.rakovic@trijumfstanic.rs",
-  },
-  {
     bigImage: "/carousel/Jeka.png",
     mobileImage: "/carousel/jeka-mobile.png",
     title: "Nemanja Radosavljević",
     subtitle: "Direktor razvoja poslovanja",
     text: "060/441 36 60 <br> nemanja.radosavljevic@trijumfstanic.rs",
+  },
+  {
+    bigImage: "/carousel/Marina-Radivojevic-desktop.png",
+    mobileImage: "/carousel/Marina-Radivojevic-mobile.png",
+    title: "Marina Radivojević",
+    subtitle: "Koordinator komercijalnih i distributivnih aktivnosti",
+    text: "060/441 36 68 <br> marina.radivojević@trijumfstanic.rs",
   },
 ];
 
